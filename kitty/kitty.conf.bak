@@ -1,0 +1,18 @@
+
+# FONTS
+font_family FiraMono Nerd Font Mono
+font_size=9
+adjust_line_height 150%
+disable_ligatures never
+
+# TERMINAL
+cursor_blink_interval 0
+enable_audo_bell 0
+hide_window_decorations no
+window_padding_width 10
+
+
+# BEGIN_KITTY_THEME
+# Alabaster Dark
+include current-theme.conf
+# END_KITTY_THEME

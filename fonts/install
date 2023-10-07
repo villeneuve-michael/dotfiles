@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+fonts_list=(
+  font-fira-mono-nerd-font
+  font-jetbrains-mono-nerd-font
+)
+
+brew tap homebrew/cask-fonts
+
+for font in "${fonts_list[@]}"
+do
+  brew install --cask "$font"
+done
+exit
+

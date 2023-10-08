@@ -49,9 +49,6 @@ require("lazy").setup({
   -- Automatically add closing brackets, quotes, etc.
   { 'windwp/nvim-autopairs', config = true },
 
-  -- Add smooth scrolling to avoid jarring jumps
-  { 'karb94/neoscroll.nvim', config = true },
-
   -- Split arrays and methods onto multiple lines, or join them back up.
   { 'AndrewRadev/splitjoin.vim' },
 
@@ -68,7 +65,7 @@ require("lazy").setup({
   { import = 'laradev.plugins.bufdelete' },
 
   -- Improved syntax highlighting
-  { 'nvim-treesitter/nvim-treesitter' },
+  { import = 'laradev.plugins.treesitter' },
 
     -- A Status line.
   { import = 'laradev.plugins.lualine' },
@@ -84,6 +81,22 @@ require("lazy").setup({
 
   -- Git commands.
   { 'tpope/vim-fugitive', dependencies = 'tpope/vim-rhubarb' },
+
+    --- Floating terminal.
+  { import = 'laradev.plugins.floaterm' },
+
+    -- Language Server Protocol.
+  { import = 'laradev.plugins.lspconfig' },
+
+  -- Completion
+  { import = 'laradev.plugins.cmp' },
+
+    -- PHP Refactoring Tools
+  { import = 'laradev.plugins.phpactor' },
+
+  -- PHP Refactoring tools
+  'adoy/vim-php-refactoring-toolbox',
+
 })
 
 vim.cmd [[colorscheme catppuccin-macchiato]]

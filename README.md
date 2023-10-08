@@ -34,3 +34,11 @@ Required for vim-telescope
 ```
 brew install ripgrep
 ```
+
+Language servers
+```
+npm install -g intelephense
+npm install -g @vue/language-server
+npm install -g @tailwindcss/language-server
+```
+

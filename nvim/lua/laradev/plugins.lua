@@ -22,6 +22,9 @@ require("lazy").setup({
    -- Add, change, and delete surrounding text.
   { 'tpope/vim-surround' },
 
+  -- Vim sugar for the UNIX shell commands
+  { 'tpope/vim-eunuch' },
+
   -- Add, change, and delete surrounding text.
   { 'tpope/vim-sleuth' },
 
@@ -95,7 +98,7 @@ require("lazy").setup({
   { import = 'laradev.plugins.phpactor' },
 
   -- PHP Refactoring tools
-  'adoy/vim-php-refactoring-toolbox',
+  { import = 'laradev.plugins.php-refactoring-toolbox' },
 
 })
 

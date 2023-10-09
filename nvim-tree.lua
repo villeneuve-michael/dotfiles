@@ -2,7 +2,7 @@ return {
   'kyazdani42/nvim-tree.lua',
   dependencies = 'kyazdani42/nvim-web-devicons',
   keys = {
-    { '<Leader>n', ':NvimTreeFindFileToggle<CR>', { silent = true } },
+    { '<Leader>t', '<cmd>:NvimTreeFindFileToggle<CR>', { silent = true } },
   },
   opts = {
     git = {

@@ -100,6 +100,15 @@ require("lazy").setup({
   -- PHP Refactoring tools
   { import = 'laradev.plugins.php-refactoring-toolbox' },
 
+  -- Plugin for Neovim to enhance the development experience of Laravel projects
+  { import = 'laradev.plugins.laravel' },
+
+  -- Multi cursor support
+  'mg979/vim-visual-multi',
+
+   -- Added auto save
+  'pocco81/auto-save.nvim',
+
 })
 
 vim.cmd [[colorscheme catppuccin-macchiato]]

@@ -7,6 +7,7 @@ return {
     'nvim-treesitter/playground',
     'JoosepAlviste/nvim-ts-context-commentstring',
     'nvim-treesitter/nvim-treesitter-textobjects',
+    'tree-sitter/tree-sitter-php',
   },
   opts = {
     ensure_installed = 'all',

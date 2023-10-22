@@ -2,12 +2,18 @@ return {
   'nvim-treesitter/nvim-treesitter',
   build = function()
     require('nvim-treesitter.install').update({ with_sync = true })
+    vim.filetype.add({
+      pattern = {
+        ['.*%.blade%.php'] = 'blade',
+      },
+    })
   end,
   dependencies = {
     'nvim-treesitter/playground',
     'JoosepAlviste/nvim-ts-context-commentstring',
     'nvim-treesitter/nvim-treesitter-textobjects',
     'tree-sitter/tree-sitter-php',
+    'EmranMR/tree-sitter-blade',
   },
   opts = {
     ensure_installed = 'all',

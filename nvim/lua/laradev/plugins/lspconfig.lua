@@ -33,8 +33,6 @@ return {
       capabilities = capabilities
     })
 
-    require('lspconfig').bladeformatter.setup()
-
     require('lspconfig').phpactor.setup({
       capabilities = capabilities,
       on_attach = function(client, bufnr)

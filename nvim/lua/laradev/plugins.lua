@@ -88,8 +88,8 @@ require("lazy").setup({
     --- Floating terminal.
   { import = 'laradev.plugins.floaterm' },
 
-    -- Language Server Protocol.
-  { import = 'laradev.plugins.lspconfig' },
+  -- Language Server Protocol.
+  -- { import = 'laradev.plugins.lspconfig' },
 
   -- Completion
   { import = 'laradev.plugins.cmp' },
@@ -109,6 +109,10 @@ require("lazy").setup({
    -- Added auto save
   'pocco81/auto-save.nvim',
 
+  -- Language Server Protocol.
+  { import = 'laradev.plugins.coc-nvim' },
+
+  { 'jwalton512/vim-blade' },
 })
 
 vim.cmd [[colorscheme catppuccin-macchiato]]
